@@ -20,6 +20,7 @@ from django.conf.urls import url, include
 urlpatterns = [
     url(r'^gestaoBiblioteca/', include([
         path('admin/', admin.site.urls),
-        url(r'^', include('Login.urls'))
+        url(r'^', include('Login.urls')),
+        url(r'^', include('Gestao.urls'))
     ])),
 ]
